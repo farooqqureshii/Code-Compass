@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^1.6.2",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.294.0",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18",
-    "axios": "^1.6.2",
-    "lucide-react": "^0.294.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,4 +27,4 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
-} 
+}

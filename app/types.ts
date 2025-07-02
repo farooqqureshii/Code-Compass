@@ -13,6 +13,7 @@ export interface Issue {
   updatedAt: string
   assignees: Assignee[]
   estimatedTime: string
+  ai?: boolean
 }
 
 export interface Label {

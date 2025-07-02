@@ -3,6 +3,7 @@ import { Issue } from '../types'
 
 interface IssueCardProps {
   issue: Issue
+  className?: string
 }
 
 const getDifficultyColor = (difficulty: string) => {
@@ -18,9 +19,9 @@ const getDifficultyColor = (difficulty: string) => {
   }
 }
 
-export default function IssueCard({ issue }: IssueCardProps) {
+export default function IssueCard({ issue, className }: IssueCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+    <div className={`bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow ${className || ''}`}>
       {/* Header */}
       <div className="flex items-start justify-between mb-3">
         <h3 className="font-semibold text-gray-900 line-clamp-2 flex-1">
